@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="title" content="" />
+<meta name="description" content="" />
+<title>Minibuzz</title>
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/inner.css" rel="stylesheet" type="text/css" />
+<link href="css/slimbox2.css" rel="stylesheet" type="text/css" />
+<link href="css/jqueryslidemenu.css" rel="stylesheet" type="text/css"/>
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/Tuffy_500-Tuffy_700-Tuffy_italic_500.font.js"></script>
+<script type="text/javascript">
+	 Cufon.replace('h1') ('h1 a') ('h2') ('h3') ('h4') ('h5') ('h6') ('.desc')
+</script>
+<script type="text/javascript" src="js/jqueryslidemenu.js"></script>
+<script type="text/javascript" src="js/slimbox2.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#main-gallery').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 0,
+		height:680,
+        pager:  '#navcat',
+		cleartype:!$.support.opacity,
+   		cleartypeNoBg:   true,
+        pagerAnchorBuilder: function(idx, slide) {
+            // return sel string for existing anchor
+            return '#navcat li:eq(' + (idx) + ') a';
+        }
+    });
+});
+</script>
+<script type="text/javascript" src="js/fade.js"></script>
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('img');
+</script>
+<![endif]--> 
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="container">
+		<div id="top">
+			<div id="logo">
+				<h1><a href="index.php"><span class="t1">Mini</span>Buzz</a></h1>
+				<span class="desc">Company Slogan Here</span>
+			</div><!-- end #logo -->
+		</div><!-- end #top -->
+		<div id="topnavigation">
+			<div id="topnav">
+					<div id="myslidemenu" class="jqueryslidemenu">
+					<ul>
+						<li class="home"><a href="index.php">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="active"><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="#">Page Templates</a>
+							  <ul>
+								  <li><a href="index.php">Index Page</a></li>
+								  <li><a href="about.html">About</a></li>
+								  <li><a href="portfolio.html">Portfolio</a></li>
+								  <li><a href="blog.html">Blog</a></li>
+								  <li><a href="full-width.html">Full Width</a></li>
+								  <li><a href="contact.html">Contact</a></li>
+								  <li><a href="#">Sub Menu Demo</a>
+								  	<ul>
+										<li><a href="#">Sub Menu Level 3a</a></li>
+										<li><a href="#">Sub Menu Level 3b</a></li>
+										<li><a href="#">Sub Menu Level 3c</a></li>
+									</ul>
+								  </li>
+							  </ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					</div>
+			</div><!-- end #topnav -->
+			<div id="topsearch">
+				<form action="" method="post">
+					<p><input type="text" class="inputbox" /><input type="submit" value="Search" class="but" /></p>
+				</form>
+			</div><!-- end #topsearch -->
+		</div><!-- end #topnavigation -->
+		<div id="header-inner">
+			<h1 class="pagetitle">Our Best Project</h1>
+		</div><!-- end #header-inner -->
+		<div id="content-full">
+				<div id="gallery-category">
+				<h2>View by:</h2>
+				<ul id="navcat">
+					<li><a href="#" >Web Design</a></li>
+					<li><a href="#">Html</a></li>
+					<li><a href="#">Wordpress</a></li>
+					<li><a href="#">Offline Design</a></li>
+				</ul>
+				</div>
+				<div class="clr"></div><!-- end clear float-->
+				<div id="main-gallery">
+					<ul>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf1_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf1.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Project1</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf2_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf2.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Project2</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf3_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf3.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Project3</a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf4_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf4.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project4</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf5_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf5.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project5</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf6_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf6.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project6</a> </span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf7_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf7.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project7</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf8_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf8.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project8</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf9_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf9.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project9</a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf10_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf10.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project10</a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf11_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf11.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project11</a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf12_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf12.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Project12</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+					</ul><!-- end page1 -->
+					<ul>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf12_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf12.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf11_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf11.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf10_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf10.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet</a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf9_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf9.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf8_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf8.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf7_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf7.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet</a> </span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf6_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf6.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf5_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf5.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf4_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf4.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf3_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf3.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf2_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf2.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf1_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf1.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+					</ul><!-- end page2 -->
+					<ul>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf1_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf1.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf2_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf2.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf3_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf3.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet</a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf4_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf4.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf5_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf5.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf6_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf6.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet</a> </span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf7_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf7.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf8_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf8.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf9_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf9.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf10_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf10.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf11_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf11.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf12_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf12.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+					</ul><!-- end page3 -->
+					<ul>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf12_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf12.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf11_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf11.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf10_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf10.jpg" alt="" class="fade"/></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet</a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf9_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf9.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf8_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf8.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf7_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf7.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet</a> </span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf6_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf6.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Lorem ipsum dolor sit amet</a></span>
+							<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf5_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf5.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf4_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf4.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf3_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf3.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li>
+							<div class="portfoliobg">
+							<a href="images/pf/pf2_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf2.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Dolor sit amet </a></span>
+							<p>Ut enim ad minim veniam. quis nostrud xercitation. ullamco laboris nisi ut aliquip ex ea commodo.</p>
+						</li>
+						<li class="nomargin">
+							<div class="portfoliobg">
+							<a href="images/pf/pf1_large.jpg" rel="lightbox-gallery1"><img src="images/pf/pf1.jpg" alt="" class="fade" /></a>
+							</div>
+							<span class="tblue"><a href="">Ipsum dolor sit amet</a> </span>
+							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+					</ul><!-- end page4 -->
+				</div><!-- end #main-gallery -->
+				<div id="bottombox">
+					<div class="col-l">
+						<h2>Request a Quote</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					</div><!-- end col-l -->
+					<div class="col-r">
+						<a href="#" class="but">View Client List</a>
+					</div><!-- end col-r -->
+					<div class="clr"></div><!-- clear float -->
+				</div><!-- end #bottombox -->
+		</div><!-- end #content-full -->
+		<div id="footer">
+			<div id="footer-text">
+				Copyright &copy;2010 MiniBuzz. All rights reserved.
+			</div><!-- end #footer-text -->
+		</div><!-- end #footer -->
+	</div><!-- end #container -->	
+</div><!-- end #wrapper -->	
+	
+</body>
+</html>
+
+<!-- Localized -->

@@ -1,0 +1,58 @@
+/* 
+
+Minibuzz - CSS File For s3Slider JQuery
+
+*/
+#s3slider { 
+   width: 940px; /* important to be same as image width */ 
+   height: 340px; /* important to be same as image height */
+   position: relative; /* important */
+   overflow: hidden; /* important */
+}
+
+#s3slider a.but, #s3slider a.but:visited{color:#fff; padding:4px 4px; background-color:#444; filter: alpha(opacity=90); opacity: 0.9; border:solid 2px #363637;}
+
+#s3sliderContent {
+   width: 940px; /* important to be same as image width or wider */
+   position: absolute; /* important */
+   top: 0; /* important */
+   margin:0px ;/* important */
+   list-style-type:none !important;
+   
+}
+
+.s3sliderImage {
+   float: left; /* important */
+   position: relative; /* important */
+   display: none; /* important */
+   llist-style-type:none !important;
+}
+
+.s3sliderImage div {
+   position: absolute; /* important */
+   right:0;
+   top:0;
+   font-size: 12px;
+   padding:0;
+   width: 390px;
+   height:340px;
+   padding:60px 30px 20px 30px;
+   background-color: #000;
+   filter: alpha(opacity=60); /* here you can set the opacity of box with text */
+   opacity: 0.6; /* here you can set the opacity of box with text */
+   color: white;
+   display: none; /* important */
+   bottom: 0px;
+
+   /*
+       if you put
+       top: 0; -> the box with text will be shown at the top of the image 
+       if you put
+       bottom: 0; -> the box with text will be shown at the bottom of the image
+   */
+}
+.s3sliderImage div h1{font-size:50px; color:#fff;}
+
+.clear {
+   clear: both;
+} 

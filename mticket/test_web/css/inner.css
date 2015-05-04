@@ -1,0 +1,49 @@
+/* 
+
+Minibuzz - CSS File
+
+USE THIS STYLE SHEET FOR INNER PAGE
+
+*/
+/* PORTFOLIO */
+#gallery-category{padding:0px 0px 10px 0px; margin-bottom:0px; float:left}
+#main-gallery{width:100%; margin-bottom:20px; position:relative;}
+#main-gallery h4{font-size:16px; line-height:14px; margin:10px 0px 5px 0px;}
+#main-gallery ul{list-style-type:none; margin:0px; padding:0px;}
+#main-gallery ul li{list-style-type:none; margin:0px; padding:0px 0px 20px 0px; float:left; width:220px; margin-right:20px;  background-image:none; line-height:20px}
+#main-gallery ul li.nomargin{margin-right:0px;}
+#main-gallery ul li img{margin-bottom:5px; display:block}
+#main-gallery ul li a, #main-gallery ul li a:visited{color:#666;}
+.portfoliobg { width:220px; height:120px; float:left; background:url(../images/hover-opacity.png) no-repeat top left; margin-bottom:10px}
+span.tblue, span.tblue a, span.tblue a:visited{color:#2d84b6 !important; font-weight:bold;}
+#gallery-category h2{float:left;}
+ul#navcat{list-style-type:none; margin:0px; padding:5px 0px 0px 10px;float:left}
+ul#navcat li{list-style-type:none; margin:0px; padding:0px 5px; float:left}
+ul#navcat li a, ul#navcat li a:visited{color:#656253;}
+#bottombox{background-color:#e9e9e9; padding:20px 30px; margin-bottom:20px}
+.col-l{float:left; width:700px}
+.col-r{float:left; padding:40px 0px 0px 50px}
+/* BLOG */
+.post{ background-image:url(../images/dotted-horizontal.gif); background-repeat:repeat-x; background-position:bottom; margin-bottom:30px;}
+.post h2{margin-bottom:10px;}
+.entry{padding:12px 0px 10px 0px;}
+/* CONTACT */
+form{margin:0; padding:0;}
+fieldset{border:0px;}
+#contact_form{margin:0 auto; position:relative}
+label{margin-top:3px;}
+label.sp { width:3px;}
+span.error{color:red;text-align:left;}
+
+#message{ margin-left:0px;}
+#message h2	{}
+#message p{margin:6px 0px; }
+
+input.text-input{ margin:4px 8px 4px 0px; width: 280px; height:15px; padding:5px 2px; border:solid 1px #888888; vertical-align:middle}
+textarea.text-input{ margin:0px 8px 4px 0px; padding: 5px 2px; border:solid 1px #888888; vertical-align:top; width:380px;}
+#contact_form input:focus, #contact_form textarea:focus {border:solid 1px #888888; }
+#contact_form input.but{font-size:11px; font-family:Arial;  padding:5px 5px; border:0px; margin-top:10px; cursor:pointer;}
+* html #contact_form input.but{padding:6px 6px !important;}/* ie 6 only */
+*+html #contact_form input.but{padding:6px 6px !important;}/* ie 7 only */
+
+

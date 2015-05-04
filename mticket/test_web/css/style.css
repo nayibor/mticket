@@ -1,0 +1,170 @@
+/* 
+
+Minibuzz - CSS File
+
+*/
+
+
+/*** GLOBAL  ***/
+html,body{height:100%; min-height:100%}
+body {
+	font-family:Arial, Tahoma, Verdana;
+	font-size:12px;
+	margin:0 auto;
+	padding:0;
+	color:#656253;
+	line-height:20px;
+	background-color:#ebeceb;
+}
+* {
+	margin:0;
+	padding:0;
+}
+*:focus {
+	outline:none; /* removes ugly dotted border but may make template more unsuable, up to you
+					 if you want to keep it! */
+}
+.clr{clear:both}
+form{margin:0; padding:0;}
+hr {
+	border: 0;
+	color: #f2f2f2;
+	background-color: #f2f2f2;
+	height: 1px;
+	margin:5px 0px 5px 0px;
+	padding:0px;
+}
+*+html hr{margin:0px 0px 5px 0px;}
+
+hr.dotted{background-image:url(../images/dotted-horizontal.gif) !important; border:0px; background-repeat:repeat-x;}
+
+/*** END OF GLOBAL  ***/
+
+/*** DEFAULT ELEMENT STYLES ***/
+/* heading */
+h1, h2{margin-bottom:12px; font-family:Arial, Verdana; font-weight:normal; color:#2d84b6}
+h3, h4, h5, h6{margin-bottom:8px; font-family:Arial, Verdana; font-weight:normal; color:#2d84b6;  letter-spacing:-1px}
+h1 {font-size:28px; line-height:30px;}
+h2 {font-size:22px; line-height:24px;}
+h3 {font-size:18px; line-height:20px;}
+h4 {font-size:14px; line-height:15px;}
+h5, h6 {font-size:13px; line-height:15px;}
+/* links */
+a, a:visited {color:#df7034; text-decoration:none;}
+a:hover{color:#df7034; text-decoration:underline;}
+a img{border:none}
+.imgleft{float:left; margin-right:15px; margin-top:5px;}
+.imgborder{padding:0px; margin:5px 0px;}
+.imgright{float:right; margin-left:15px;}
+.imgcenter{ margin:5px 0px 10px 0px; display:block; text-align:center}
+/* lists, blockquotes and paragraphs */
+p, ul, ol, blockquote {
+	font-size:12px;
+	margin-bottom:20px;
+}
+ul, ol {
+	margin:10px 0 20px 20px;
+}
+li ol,
+li ul
+{
+	list-style:square;
+	margin-bottom:0;
+	margin-top:0;
+}
+li ol {list-style:decimal;}
+	
+blockquote {
+	font-size:12px;
+	margin:20px 0 20px 0px;
+	color:#6b6b6b;
+	padding:15px 20px 10px 35px;
+	background-image:none;
+	line-height:20px;
+	border-left:solid 5px #2d84b6;
+	background-color:#f6f6f6;
+	}
+
+/* code */
+code {
+	font-family:Verdana, Arial;
+	letter-spacing:1px;
+	margin:25px 0 25px 0px;
+	display:block;
+	font-size:0.9em;
+	border-left:4px solid #e0e0e0;
+	padding:15px 10px;
+}
+
+/*** END OF DEFAULT ELEMENT STYLES ***/
+
+/*** CONTAINER ***/
+#wrapper{width:100%;}
+#container{width:940px; margin:0 auto; padding:0px 30px; background-color:#fff}
+
+/* TOP */
+#top{height:92px; border-top:solid 2px #2d84b6; padding:22px 0px 0px 0px}
+#logo h1, #logo h1 a, #logo h1 a:visited{font-size:48px; color:#2d84b6; margin-bottom:0px;}
+#logo h1 a:hover{text-decoration:none;}
+#logo .t1{color:#656253;}
+#logo .desc{color:#7c7a6b; font-size:14px;}
+#topnavigation{/**background-image:url(../images/dotted-horizontal.gif);**/ background-repeat:repeat-x; background-position:0px 1px; border-bottom:solid 1px #7c7a6b; height:34px;}
+#topnav{float:left; width:690px;}
+#topnav ul{list-style-type:none; margin:0px; padding:0px 0px 0px 0px;}
+#topnav ul li{list-style-type:none; margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;color:#b9b9b9; background-image:url(../images/menu-separator.gif); background-repeat:no-repeat; background-position:0px 12px}
+#topnav ul li li{padding:0px;}
+#topnav ul li.home{background-image:none;}
+#topnav ul li.active{border-top:solid 3px #2d84b6;}
+#topnav ul li a, #topnav ul li a:visited{color:#000;}
+#topnav ul li a:hover{color:#9fa1a2; text-decoration:none}
+#topsearch{width:250px; float:left; padding:7px 0px 0px 0px;}
+#topsearch form p{margin:0px;}
+*+html #topsearch {padding:5px 0px 0px 0px;}/* ie 7 only */
+* html #topsearch {padding:5px 0px 0px 0px;}/* ie 6 only */
+.inputbox{border:solid 1px #c4c3ba; padding:2px 2px 2px 2px; margin-right:3px; vertical-align:middle; width:170px}
+.but{border:solid 1px #363637; font-family:Arial; font-size:11px; background-color:#000; color:#fff; padding:2px 10px;  cursor:pointer; vertical-align:middle; text-transform:uppercase}
+a.but, a.but:hover{text-decoration:none; color:#fff; padding:6px 10px !important}
+*+html .but{padding:2px 3px 1px 3px !important;}/* ie 7 only */
+* html .but{padding:2px 3px 1px 3px !important;}/* ie 6 only */
+
+/* HEADER */
+#header{height:350px; clear:left; margin:10px 0px 0px 0px; position:relative}
+#header-inner{background-image:url(../images/dotted-horizontal.gif); background-repeat:repeat-x; background-position:bottom; padding:35px 0px 20px 0px}
+#header-inner h1.pagetitle{margin:0px; color:#444133; font-size:36px;}
+#slideshow ul{margin:0px; padding:0px; list-style-type:none;}
+#slideshow ul li{margin:0px; padding:0px; list-style-type:none;}
+
+/* CONTENT */
+#content{margin:20px 0px; background-image:url(../images/bg-content.gif); background-repeat:repeat-y; width:940px}
+#content-full{margin:20px 0px}
+#content-left{width:650px; float:left;}
+#content-right{width:290px; float:left;}
+#maintext{padding:0px 20px 20px 0px}
+ul.inline{list-style-type:none; padding:0px; margin:20px 0px 20px 0px}
+ul.inline li{list-style-type:none; padding:0px; margin:0px 20px 0px 0px; display:inline; float:left; width:196px}
+ul.inline li.nomargin{margin:0px;}
+ul.inline h2{margin:10px 0px 5px 0px;}
+ul.checklist{list-style-type:none; padding:0px; margin:0px}
+ul.checklist li{list-style-type:none; padding:0px 0px 0px 20px; margin:0px; background-image:url(../images/checklist.gif); background-repeat:no-repeat; background-position:0px 5px;}
+* html ul.checklist li{ padding:0px 0px 0px 30px !important;}/* ie 6 only */
+#sideright{padding:0px 0px 0px 30px}
+#sideright h2{margin-bottom:8px;}
+#sideright ul{list-style-type:none; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;}
+#sideright ul li { background-image:url(../images/arrowlist.gif); background-repeat:no-repeat; background-position:0px 11px; padding:5px 0px 5px 20px}
+#sideright ul.newslist li{list-style-type:none; padding:5px 0px 10px 0px; margin:0px 0px 5px 0px;  background-image:url(../images/dotted-horizontal.gif); 
+background-repeat:repeat-x; background-position:bottom; line-height:20px}
+#sideright ul.newslist li.noline{background-image:none; padding-bottom:0px; margin-bottom:0px;}
+#sideright ul li a, #sideright ul li a:visited{color:#656253;}
+.box{ background-image:url(../images/dotted-horizontal.gif); background-repeat:repeat-x; background-position:bottom;padding:0px 0px 18px 0px; margin:0px 0px 18px 0px;}
+.boxnoline{background-image:none; padding:0px 0px 18px 0px; margin:0px 0px 18px 0px;}
+.news-container .box{ background-image:none; padding:0px; margin:0px;}
+#sideright blockquote{margin:10px 0px 0px 0px; padding:0px 0px 0px 30px; background:none; border:0px; background-image:url(../images/quote.gif); background-repeat:no-repeat;}
+.small{color:#999; font-size:11px;}
+span.tblue, span.tblue a, span.tblue a:visited{color:#2d84b6 !important; font-weight:bold;}
+span.tblue2{color:#2d84b6 !important;}
+
+
+/* FOOTER */
+#footer{padding:10px 0px 40px 0px; width:940px; background-image:url(../images/double-line.gif); background-repeat:repeat-x}
+#footer-text{font-size:11px; color:#999689;margin-bottom: 40px; }
+
